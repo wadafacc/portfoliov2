@@ -22,25 +22,14 @@ a {
     color: white;
     font-family: 'Space Mono', monospace;
     text-decoration: none;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: #76C893;
 }
 
 .main {
     width: 65%;
     margin: 0 auto;
-}
-
-.dark-green {
-    color: #598B2C;
-}
-
-.green {
-    color: #B3DD18;
-}
-
-.blue {
-    color: #05668D;
-}
-
-.light-blue {
-    color: #3891A6;
 }

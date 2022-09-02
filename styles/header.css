@@ -9,51 +9,57 @@ img {
     padding-top: 1rem;
 }
 
-.nav-btn {
-    float: right;
-    margin-top: 1rem;
-}
-
 .nav {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: none;
-}
-
-.nav .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #34A0A4;
-    height: 100%;
     width: 100%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.center {
+.text {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/*
+anim
+*/
+.navigation {
+    float: right;
+    margin-top: 1rem;
+}
+
+.btn {
     width: 3rem;
+    z-index: 3;
+    position: absolute;
 }
 
-.center:before,
-.center:after {
+.btn:before,
+.btn:after {
     background: #99D98C;
     content: "";
     display: block;
-    height: 6px;
-    border-radius: 3px;
-    margin: 7px 0;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    margin: 0.4rem 0;
     transition: 0.5s;
-    z-index: 2;
-
 }
 
 .anim:before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(0.6rem) rotate(135deg);
 }
 
 .anim:after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-0.6rem) rotate(-135deg);
 }
