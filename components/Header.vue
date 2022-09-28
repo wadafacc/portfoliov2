@@ -6,7 +6,7 @@
       <div class="btn" id="nav" @click="anim()"></div>
       <div class="nav" id="menu">
         <a href="#about" @click="anim()">about me</a>
-        <a href="#edu" @click="anim()">background</a>
+        <a href="#background" @click="anim()">background</a>
         <a href="#projects" @click="anim()">things done</a>
         <a href="#contact" @click="anim()">up for a coffee?</a>
       </div>

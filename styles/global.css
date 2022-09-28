@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
 https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77
@@ -24,19 +24,92 @@ a {
     text-decoration: none;
     transition: 0.25s;
     font-size: 2rem;
+    overflow: hidden;
+
+}
+
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Space Mono', monospace;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Quicksand', monospace;
+    font-weight: 100;
+    font-style: italic;
 }
 
 a:hover {
-    color: #168AAD;
+    color: #fff;
+    /* border-bottom: #fff 0.2rem solid; */
+    transform: translate(-0.25rem, -0.25rem);
+    /* margin: -0.35rem 0; */
 }
 
 .main {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+}
+
+@media (max-width : 500px) {
+    .main {
+        width: 95%;
+    }
 }
 
 .header {
     width: 100%;
     height: 5rem;
     padding-top: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.special {
+    color: #fff;
+}
+
+.text {
+    width: 60%;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #eeeeee;
+}
+
+.separator {
+    height: 10rem;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B5E48C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #92b871;
 }

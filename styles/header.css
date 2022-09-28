@@ -18,7 +18,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(65deg, #D9ED92, #34A0A4);
+    background-image: linear-gradient(65deg, #f24599, #32ded4);
     z-index: 1;
     overflow: hidden;
 }
@@ -35,16 +35,17 @@ anim
     width: 3rem;
     z-index: 3;
     position: absolute;
+    margin-left: -3rem;
 }
 
 .btn:before,
 .btn:after {
-    background: #99D98C;
+    background: #fff;
     content: "";
     display: block;
     height: 0.3rem;
     border-radius: 0.5rem;
-    margin: 0.4rem 0;
+    margin: 0.3rem 0;
     transition: 0.5s;
 }
 
